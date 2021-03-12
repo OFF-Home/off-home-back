@@ -13,3 +13,9 @@ M
 src/api/users.js,8\0\8076fa143e4e587e8cd98c3bd1dea032566d4d01
 @
 src/api/index.js,3\7\37864a18575bc7717a4c7c8ddaf7f14a70f0d60f
+E
+src/api/activitats.js,9\9\99733ddd56e7990fd43658f69507ca06aabfc49e
+J
+src/services/activitats.js,2\d\2da06966750839151d979c73554a5e05495779bd
+H
+src/models/activitats.js,8\e\8e245452ba23a4a9199640d3d6bccad8e9c760e1

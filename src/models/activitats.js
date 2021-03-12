@@ -9,4 +9,6 @@ exports.get_activitats = function(){
             categoria: 'Caminar',
         },
         ];
+
+    //8c2658ae0f7fc1545a031d7e0faa29fbb3000451
 }
