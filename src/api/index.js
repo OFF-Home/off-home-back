@@ -7,4 +7,5 @@ let index = require('../services/index.js')
 router.get('/', index.get_categories);
 
 
+
 module.exports = router;
