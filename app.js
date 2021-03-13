@@ -1,5 +1,7 @@
 var createError = require('http-errors');
 var express = require('express');
+var mongoose = require('mongoose');
+
 var path = require('path');
 var cookieParser = require('cookie-parser');
 var logger = require('morgan');
@@ -42,6 +44,12 @@ app.use(function(err, req, res, next) {
   // render the error page
   res.status(err.status || 500);
   res.send('error');
+});
+
+//CONNECT TO MONGODB
+mongoose.connect('mongodb+srv://backend:backend2021@cluster0.1qpev.mongodb.net/myFirstDatabase?retryWrites=true&w=majority', ()=>
+{
+ console.log('connected to DB')
 });
 
 module.exports = app;

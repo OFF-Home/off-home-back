@@ -19,3 +19,5 @@ J
 src/services/activitats.js,2\d\2da06966750839151d979c73554a5e05495779bd
 H
 src/models/activitats.js,8\e\8e245452ba23a4a9199640d3d6bccad8e9c760e1
+9
+	gitignore,6\f\6f819b366cb83f2e62d7b8b23b65c2e28c01306a
