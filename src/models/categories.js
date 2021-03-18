@@ -1,4 +1,5 @@
 const models = require('../../models');
+const res = require("express/lib/response");
 
 exports.get_categories = function () {
     //const newCat = models.Categories.create({nom: "Correr", description: "algo"});
