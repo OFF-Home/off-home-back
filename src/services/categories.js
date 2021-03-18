@@ -1,7 +1,6 @@
 
-
 let db = require('../models/categories.js')
 
 exports.get_categories = function(req,res,next) {
-    var list_categories  = db.get_categories();
-    res.send(list_categories)};
+    var categories_db  = db.get_categories();
+    res.send(categories_db)};
