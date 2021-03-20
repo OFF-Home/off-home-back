@@ -3,7 +3,7 @@ const res = require("express/lib/response");
 
 exports.get_categories = function () {
     //const newCat = models.Categories.create({nom: "Correr", description: "algo"});
-    models.Categories.findAll().then(categories => {
+    /*models.Categories.findAll().then(categories => {
         var list_of_categories = {
             categories: []
         };
@@ -19,6 +19,10 @@ exports.get_categories = function () {
         }
         res.send(list_of_categories)
     });
+    */
+
 
     //return [{nom: "Caminar", description:"caminar molt"}];
 };
+
+
