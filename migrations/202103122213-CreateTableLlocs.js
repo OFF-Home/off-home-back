@@ -4,16 +4,39 @@ module.exports = {
         return queryInterface.createTable('Llocs', {
             createdAt: {
                 allowNull:false,
-                type:Sequelize.Date
+                type:Sequelize.DATE
             },
             updateAt: {
                 allowNull:false,
-                type:Sequelize.Date
+                type:Sequelize.DATE
             },
-            adreca: {
+            carrer: {
                 primaryKey : true,
                 type: Sequelize.STRING
             },
+            numCarrer: {
+                primaryKey: true,
+                type: Sequelize.INTEGER
+            },
+            maxAssistents: {
+                type: Sequelize.INTEGER
+            },
+            latitud: {
+                type: Sequelize.BIGINT,
+                unique: 'actions_unique',
+                allowNull: false
+            },
+            altitud: {
+                type: Sequelize.BIGINT,
+                unique: 'actions_unique',
+                allowNull: false
+            }
+        }, {
+            uniqueKeys: {
+                action_unique: {
+                    fields:['latitud','altitud']
+                }
+            }
         });
     },
     down: (queryInterface, Sequelize) => {
