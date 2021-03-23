@@ -10,13 +10,9 @@ module.exports = {
                 allowNull:false,
                 type:Sequelize.DATE
             },
-            carrer: {
+            carreriNum: {
                 primaryKey : true,
                 type: Sequelize.STRING
-            },
-            numCarrer: {
-                //primaryKey: true,
-                type: Sequelize.INTEGER
             },
             maxAssistents: {
                 type: Sequelize.INTEGER

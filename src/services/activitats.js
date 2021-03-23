@@ -44,49 +44,26 @@ exports.create_activitats = function(req,res,next) {
         estrelles: 3,
         tags: "agnes",
         language: "agnes"
-    }).then(usu => res.send("okayusu"))
-
-    models.DataHoras.create({
-        data: "dimecres",
-        hora: "10am"
-
-    }).then(dat => res.send("okaydat1"))
-    models.DataHoras.create({
-        data: "dilluns",
-        hora: "11am"
-
-    }).then(dat => res.send("okaydat2"))
-    models.DataHoras.create({
-        data: "dijous",
-        hora: "21pm"
-
-    }).then(dat => res.send("okaydat3"))
-    models.DataHoras.create({
-        data: "dissabte",
-        hora: "3pm"
-
-    }).then(dat => res.send("okaydat4"))
+    }).then(usu => console.log("usuariCreat"))
 
     models.Categories.create({
         nom: "correr",
         description: "dimecres"
 
-    }).then(cat => res.send("okaycat"))
+    }).then(cat => console.log("CategoriaCreada"))
 
     models.Llocs.create({
-        carrer: "flor",
-        numCarrer: 3,
+        carreriNum: "flor3",
         maxAssistents: 3,
         latitud: 92272,
         altitud: 92239,
 
-    }).then(loc => res.send("okaylloc"))
+    }).then(loc => console.log("llocCreat"))
 
 
     models.Activitats.create({
-            usuariCreador: "agnes",
-            carrer: "flor",
-            numCarrer: 3,
+            usuariCreador: "agnes@gmail.com",
+            carreriNum: "flor3",
             dataIni: "dimecres",
             horaIni: "10am",
             categoria: "correr",

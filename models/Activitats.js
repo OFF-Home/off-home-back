@@ -4,21 +4,23 @@ module.exports = (sequelize,DataTypes) => {
         usuariCreador: {
             type: DataTypes.STRING,
             primaryKey: true,
+            references: {
+                model:'Usuaris',
+                key: 'email'
+            }
 
         },
-        carrer: {
+        carreriNum: {
             allowNull: false,
             type: DataTypes.STRING,
+            references: {
+                model:'Llocs',
+                key: 'carreriNum'
+            }
 
-        },
-        numCarrer: {
-            allowNull: false,
-            type: DataTypes.INTEGER,
         },
         dataIni: {
             type: DataTypes.STRING,
-            //primaryKey: true,
-
             //isDate: true
         },
         horaIni: {
@@ -28,6 +30,10 @@ module.exports = (sequelize,DataTypes) => {
         categoria: {
             type: DataTypes.STRING,
             allowNull: false,
+            references: {
+                model: 'Categories',
+                key: 'nom'
+            }
 
         },
         maxParticipants: {

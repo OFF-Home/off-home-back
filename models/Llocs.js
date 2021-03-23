@@ -1,13 +1,9 @@
 'use strict';
 module.exports = (sequelize,DataTypes) => {
         var Llocs = sequelize.define('Llocs', {
-            carrer: {
+            carreriNum: {
                 primaryKey: true,
                 type: DataTypes.STRING
-            },
-            numCarrer: {
-                //primaryKey: true,
-                type: DataTypes.INTEGER
             },
             maxAssistents: {
                 type: DataTypes.INTEGER
