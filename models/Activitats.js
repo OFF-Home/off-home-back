@@ -4,51 +4,31 @@ module.exports = (sequelize,DataTypes) => {
         usuariCreador: {
             type: DataTypes.STRING,
             primaryKey: true,
-            references: {
-                model:'Usuaris',
-                key: 'email'
-            }
+
         },
         carrer: {
             allowNull: false,
             type: DataTypes.STRING,
-            references: {
-                model:'Llocs',
-                key: 'carrer'
-            }
+
         },
         numCarrer: {
             allowNull: false,
             type: DataTypes.INTEGER,
-            references: {
-                model: 'Llocs',
-                key: 'numCarrer'
-            }
         },
         dataIni: {
             type: DataTypes.STRING,
-            primaryKey: true,
-            references: {
-                model: 'DataHoras',
-                key: 'data'
-            },
-            isDate: true
+            //primaryKey: true,
+
+            //isDate: true
         },
         horaIni: {
             type: DataTypes.STRING,
-            primaryKey: true,
-            references: {
-                model: 'DataHoras',
-                key: 'hora'
-            }
+
         },
         categoria: {
             type: DataTypes.STRING,
             allowNull: false,
-            references: {
-                model: 'Categories',
-                key: 'nom'
-            }
+
         },
         maxParticipants: {
             allowNull: true,
@@ -68,11 +48,12 @@ module.exports = (sequelize,DataTypes) => {
         dataFi: {
             allowNull: false,
             type: DataTypes.STRING,
-            isDate: true
+            //isDate: true
         },
         horaFi: {
             allowNull: false,
             type: DataTypes.STRING,
+
         }
     });
     return Activitats;

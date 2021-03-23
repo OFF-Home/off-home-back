@@ -14,30 +14,21 @@ module.exports = {
             usuariCreador: {
                 type: Sequelize.STRING,
                 primaryKey: true,
-                references: {
-                    model:'Usuaris',
-                    key: 'email'
-                }
+
             },
             carrer: {
                 allowNull: false,
                 type: Sequelize.STRING,
-                references: {
-                    model:'Llocs',
-                    key: 'carrer'
-                }
+
             },
             numCarrer: {
                 allowNull: false,
                 type: Sequelize.INTEGER,
-                references: {
-                    model: 'Llocs',
-                    key: 'numCarrer'
-                }
+
             },
             dataIni: {
                 type: Sequelize.STRING,
-                primaryKey: true,
+               // primaryKey: true,
                 references: {
                     model: 'DataHoras',
                     key: 'data'
@@ -46,19 +37,13 @@ module.exports = {
             },
             horaIni: {
                 type: Sequelize.STRING,
-                primaryKey: true,
-                references: {
-                    model: 'DataHoras',
-                    key: 'hora'
-                }
+                //primaryKey: true,
+
             },
             categoria: {
                 type:Sequelize.STRING,
                 allowNull: false,
-                references: {
-                    model: 'Categories',
-                    key: 'nom'
-                }
+
             },
             maxParticipants: {
                 allowNull: true,
@@ -78,11 +63,13 @@ module.exports = {
             dataFi: {
                 allowNull: false,
                 type: Sequelize.STRING,
-                isDate: true
+                //isDate: true
+
             },
             horaFi: {
                 allowNull: false,
                 type: Sequelize.STRING,
+
             },
         });
     },

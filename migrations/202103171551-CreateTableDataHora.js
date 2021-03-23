@@ -15,7 +15,7 @@ module.exports = {
                 allowNull: false,
                 type: Sequelize.STRING,
                 primaryKey: true,
-                isDate: true
+                //isDate: true
             },
             hora: {
                 allowNull: false,

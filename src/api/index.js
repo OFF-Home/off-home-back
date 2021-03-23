@@ -1,6 +1,5 @@
 var express = require('express');
 var router = express.Router();
-const activitats = require("../services/activitat");
 
 /* GET home page. */
 

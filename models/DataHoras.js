@@ -5,12 +5,12 @@ module.exports = (sequelize,DataTypes) => {
             allowNull: false,
             type: DataTypes.STRING,
             primaryKey: true,
-            isDate: true
+            //isDate: true
         },
         hora: {
             allowNull: false,
             type: DataTypes.STRING,
-            primaryKey: true
+            //primaryKey: true
         }
     });
     return DataHoras;

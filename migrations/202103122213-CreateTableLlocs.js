@@ -15,7 +15,7 @@ module.exports = {
                 type: Sequelize.STRING
             },
             numCarrer: {
-                primaryKey: true,
+                //primaryKey: true,
                 type: Sequelize.INTEGER
             },
             maxAssistents: {
